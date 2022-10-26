@@ -38,6 +38,8 @@
   margin-top: 10px;
 }
 
-a {
+a.btn {
   text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

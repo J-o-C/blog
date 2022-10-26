@@ -5,12 +5,11 @@
 
 <%for (let i = 0; i < posts.length; i++) { %>
   <% let contentCut = posts[i].content.slice(0, 100) + "..."; %>
-  <% let link = posts[i].title %>
-  <% link = link.trim().replace(" ", "-") %>
-  <% link = link.toLowerCase() %>
+  <% let link = posts[i]._id %>
+
   <h3> <%= posts[i].title %> </h3>
   <p> <%= contentCut %> <a href="/posts/<%= link %>">Read more</a> </p>
 
 <%} %>
 
-<%- include("partials/footer.ejs") -%>
+  <a href="/compose" class="btn btn-success" >New entry</a>
